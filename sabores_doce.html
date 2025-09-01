@@ -1,56 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cardápio</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cardápio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="container">
-        <nav class="sidebar">
-            <ul>
-                <a href="sabores_salgados.html"><li>🍕<br>SABORES SALGADOS</li></a>
-                <a href="sabores_doce.html"><li>🍰<br>SABORES DOCES</li></a>
-                <li>🥤<br>BEBIDAS</li>
-                <li>📋<br>MEU PEDIDO</li>
-                <li>💵<br>PAGAMENTO</li>
-                <li>🚪<br>SAIR</li>
-            </ul>
-        </nav>
-        <main class="content">
-            <h1>BEM VINDO!</h1>
-            <p>Olá, o que gostaria de pedir hoje?</p>
+<body class="m-0 font-mono bg-[#4B0000] text-white">
+  <div class="flex h-screen">
+    <nav class="w-[120px] bg-gray-300 text-black p-5 text-center">
+      <ul class="list-none p-0">
+        <a href="sabores_salgados.html"><li class="mb-8 text-sm leading-tight">🍕<br>SABORES SALGADOS</li></a>
+        <a href="sabores_doce.html"><li class="mb-8 text-sm leading-tight">🍰<br>SABORES DOCES</li></a>
+        <li class="mb-8 text-sm leading-tight">🥤<br>BEBIDAS</li>
+        <li class="mb-8 text-sm leading-tight">📋<br>MEU PEDIDO</li>
+        <li class="mb-8 text-sm leading-tight">💵<br>PAGAMENTO</li>
+        <li class="mb-8 text-sm leading-tight">🚪<br>SAIR</li>
+      </ul>
+    </nav>
 
-            <section>
-                <h2>1.Chocolate com Morango </h2>
-                <p>Feita com creme de chocolate (como Nutella ou chocolate derretido), morangos frescos fatiados e, às vezes, leite condensado por cima.
-</p>
-            </section>
+    <main class="flex-grow p-5 md:p-10 overflow-y-auto">
+      <h1 class="text-3xl font-normal mb-2">BEM VINDO!</h1>
+      <p class="text-sm mb-5">Olá, o que gostaria de pedir hoje?</p>
 
-            <section>
-                <h2>2.Banana com Canela </h2>
-                <p>Leva fatias de banana, açúcar, canela em pó e, frequentemente, um toque de leite condensado sobre a massa assada.</p>
-            </section>
+      <section class="mb-6">
+        <h2 class="text-xl font-normal mb-1">1. Chocolate com Morango</h2>
+        <p class="text-sm leading-relaxed">Feita com creme de chocolate, morangos frescos fatiados e, às vezes, leite condensado por cima.</p>
+      </section>
 
-            <section>
-                <h2>3.Romeu e Julieta</h2>
-                <p> Combina goiabada derretida com queijo (geralmente mussarela ou requeijão), unindo o doce da fruta com o salgado suave do queijo.
-</p>
-            </section>
+      <section class="mb-6">
+        <h2 class="text-xl font-normal mb-1">2. Banana com Canela</h2>
+        <p class="text-sm leading-relaxed">Leva fatias de banana, açúcar, canela em pó e, frequentemente, um toque de leite condensado.</p>
+      </section>
 
-            <section>
-                <h2>4.Prestígio </h2>
-                <p>Feita com chocolate ao leite ou meio amargo derretido, coco ralado e, em algumas versões, leite condensado.</p>
-            </section>
+      <section class="mb-6">
+        <h2 class="text-xl font-normal mb-1">3. Romeu e Julieta</h2>
+        <p class="text-sm leading-relaxed">Combina goiabada derretida com queijo (mussarela ou requeijão), unindo doce e salgado.</p>
+      </section>
 
-            <section>
-                <h2>5.Sensação </h2>
-                <p>Leva chocolate derretido, morangos picados e, em algumas versões, um pouco de creme de leite ou chantilly por cima.
-</p>
-            </section>
-        </main>
-    </div>
+      <section class="mb-6">
+        <h2 class="text-xl font-normal mb-1">4. Prestígio</h2>
+        <p class="text-sm leading-relaxed">Feita com chocolate ao leite ou meio amargo, coco ralado e leite condensado.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-normal mb-1">5. Sensação</h2>
+        <p class="text-sm leading-relaxed">Leva chocolate derretido, morangos picados e creme de leite ou chantilly por cima.</p>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
