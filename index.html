@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cardápio</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cardápio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="container">
-        <nav class="sidebar">
-            <ul>
-                <a href="sabores_salgados.html"><li>🍕<br>SABORES SALGADOS</li></a>
-                <a href="sabores_doce.html"><li>🍰<br>SABORES DOCES</li></a>
-                <li>🥤<br>BEBIDAS</li>
-                <li>📋<br>MEU PEDIDO</li>
-                <li>💵<br>PAGAMENTO</li>
-                <li>🚪<br>SAIR</li>
-            </ul>
-        </nav>
-        <main class="content">
-            <h1>BEM VINDO!</h1>
-            <p>Olá, o que gostaria de pedir hoje?</p>
+<body class="m-0 font-mono bg-[#4B0000] text-white">
+  <div class="flex h-screen">
+    <nav class="w-[120px] bg-gray-300 text-black p-5 text-center">
+      <ul class="list-none p-0">
+        <a href="sabores_salgados.html"><li class="mb-8 text-sm leading-tight">🍕<br>SABORES SALGADOS</li></a>
+        <a href="sabores_doce.html"><li class="mb-8 text-sm leading-tight">🍰<br>SABORES DOCES</li></a>
+        <li class="mb-8 text-sm leading-tight">🥤<br>BEBIDAS</li>
+        <li class="mb-8 text-sm leading-tight">📋<br>MEU PEDIDO</li>
+        <li class="mb-8 text-sm leading-tight">💵<br>PAGAMENTO</li>
+        <li class="mb-8 text-sm leading-tight">🚪<br>SAIR</li>
+      </ul>
+    </nav>
 
-            <section>
-                <h2>Sabores salgados populares:</h2>
-                <p>Calabresa, frango com catupiry, marguerita, portuguesa e quatro queijos</p>
-            </section>
+    <main class="flex-grow p-5 md:p-10">
+      <h1 class="text-3xl font-normal mb-2">BEM VINDO!</h1>
+      <p class="text-sm mb-5">Olá, o que gostaria de pedir hoje?</p>
 
-            <section>
-                <h2>Sabores doces populares:</h2>
-                <p>Chocolate com Morango, Banoffee, Nutella e Frutas, Doce de Leite com Coco, Romeu e Julieta.</p>
-            </section>
+      <section class="mb-6">
+        <h2 class="text-xl font-normal mb-1">Sabores salgados populares:</h2>
+        <p class="text-sm leading-relaxed">Calabresa, frango com catupiry, marguerita, portuguesa e quatro queijos</p>
+      </section>
 
-            <section>
-                <h2>Bebidas disponíveis:</h2>
-                <p>Sucos: Laranja, Limão, uva e acerola <br>
-                Refrigerantes(lata, 600ml, 1L e 2L): Coca, Guaraná, Tubaina, H2O, Sprite.</p>
-            </section>
-        </main>
-    </div>
+      <section class="mb-6">
+        <h2 class="text-xl font-normal mb-1">Sabores doces populares:</h2>
+        <p class="text-sm leading-relaxed">Chocolate com Morango, Banoffee, Nutella e Frutas, Doce de Leite com Coco, Romeu e Julieta.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-normal mb-1">Bebidas disponíveis:</h2>
+        <p class="text-sm leading-relaxed">
+          Sucos: Laranja, Limão, uva e acerola <br>
+          Refrigerantes (lata, 600ml, 1L e 2L): Coca, Guaraná, Tubaina, H2O, Sprite.
+        </p>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
 
